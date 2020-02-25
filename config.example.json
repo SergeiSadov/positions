@@ -1,0 +1,11 @@
+{
+  "dbPath": "/db/positions.db",
+  "dbDriver": "sqlite3",
+  "port": "6060",
+  "elastic": {
+    "host": "domains-elastic",
+    "port": "9200",
+    "username": "elastic",
+    "password": "changeme"
+  }
+}

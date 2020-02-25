@@ -1,0 +1,11 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+
+rule_files:
+scrape_configs:
+  - job_name: 'prometheus'
+  - job_name: 'node_localhost'
+    static_configs:
+      - targets: ['domains-go_green:6060']
+      - targets: ['domains-go_blue:6060']
