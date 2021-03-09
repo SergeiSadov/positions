@@ -19,3 +19,7 @@ run:
 
 test:
 	go test ./tests -covermode=atomic -coverpkg=./... -coverprofile cover.out
+
+kube-run:
+		sh build.sh
+		sh build_ek.sh
