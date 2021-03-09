@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: positions
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: positions
+  template:
+    metadata:
+      labels:
+        app: positions
+    spec:
+      containers:
+        - name: positions
+          image: positions
+          imagePullPolicy: Never
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 6000

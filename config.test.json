@@ -1,6 +1,6 @@
 {
   "database": {
-    "path": "positions.db",
+    "path": "file::memory:?cache=shared",
     "driver": "sqlite3"
   },
   "host": "localhost",
